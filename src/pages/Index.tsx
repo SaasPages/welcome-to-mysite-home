@@ -1,7 +1,7 @@
 import VideoBackground from "@/components/VideoBackground";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 import FeaturedProperties from "@/components/FeaturedProperties";
 import StatsSection from "@/components/StatsSection";
 import TechStackSlider from "@/components/TechStackSlider";
@@ -13,10 +13,11 @@ const Index = () => {
     <div className="relative min-h-screen bg-background overflow-x-hidden">
       <VideoBackground />
       <div className="relative" style={{ zIndex: 10 }}>
-        <ThemeSwitcher />
+        <Navigation />
         <main>
           <Navigation />
           <HeroSection />
+          <ThemeSwitcher />
           <TechStackSlider />
           <StatsSection />
           <FeaturedProperties />
