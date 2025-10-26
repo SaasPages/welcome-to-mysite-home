@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Play, ChevronRight } from 'lucide-react';
+import Video from "./pages/Video";
 
 const Video: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
