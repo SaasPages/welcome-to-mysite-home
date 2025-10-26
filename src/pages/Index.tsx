@@ -2,10 +2,10 @@ import VideoBackground from "@/components/VideoBackground";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
+import ComponentsSection from "@/components/ComponentsSection";
 import FeaturedProperties from "@/components/FeaturedProperties";
 import StatsSection from "@/components/StatsSection";
 import TechStackSlider from "@/components/TechStackSlider";
-import ComponentsSection from "@/components/ComponentsSection";
 import VideoSection from "@/components/VideoSection";
 
 const Index = () => {
@@ -20,8 +20,8 @@ const Index = () => {
           <ThemeSwitcher />
           <TechStackSlider />
           <StatsSection />
-          <FeaturedProperties />
           <ComponentsSection />
+          <FeaturedProperties />
           <VideoSection />
         </main>
       </div>
