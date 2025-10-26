@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import FeaturedProperties from "@/components/FeaturedProperties";
 import StatsSection from "@/components/StatsSection";
 import TechStackSlider from "@/components/TechStackSlider";
+import VideoSection from "@/components/VideoSection;
 
 const Index = () => {
   return (
