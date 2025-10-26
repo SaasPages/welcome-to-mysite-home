@@ -17,6 +17,7 @@ const Index = () => {
           <TechStackSlider />
           <StatsSection />
           <FeaturedProperties />
+          <VideoSection />
         </main>
       </div>
     </div>
