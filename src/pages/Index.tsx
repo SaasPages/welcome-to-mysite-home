@@ -5,7 +5,8 @@ import FeaturedProperties from "@/components/FeaturedProperties";
 import StatsSection from "@/components/StatsSection";
 import TechStackSlider from "@/components/TechStackSlider";
 import VideoSection from "@/components/VideoSection";
-components/TechStackSlider";
+import ComponentsSection from "@/components/ComponentsSection";
+
 const Index = () => {
   return (
     <div className="relative min-h-screen bg-background overflow-x-hidden">
@@ -18,6 +19,7 @@ const Index = () => {
           <StatsSection />
           <FeaturedProperties />
           <VideoSection />
+          <ComponentsSection />
         </main>
       </div>
     </div>
