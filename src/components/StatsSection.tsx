@@ -122,15 +122,15 @@ const StatsSection: React.FC = () => {
             return (
               <article
                 key={idx}
-                className="group relative rounded-2xl p-6 bg-card/10 border border-border/20 hover:shadow-lg transition-shadow duration-200 focus-within:shadow-lg"
+                className="group relative rounded-2xl p-6 bg-card/0.5 border border-border/0.5 hover:shadow-lg transition-shadow duration-200 focus-within:shadow-lg"
                 aria-labelledby={`stat-${idx}-label`}
                 role="region"
                 tabIndex={0}
               >
                 <div className="flex flex-col items-center text-center gap-4">
                   <div
-                    className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-white/10 to-white/5 border border-border/10
-                      group-hover:from-amber-500 group-hover:to-rose-400 transition-colors duration-300"
+                    className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-white/10 to-white/5 border border-border/0.3
+                      group-hover:from-amber-500 group-hover:to-rose-690 transition-colors duration-300"
                     aria-hidden
                   >
                     <Icon className="w-7 h-7 text-primary" />
