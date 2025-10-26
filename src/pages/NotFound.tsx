@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Play, ChevronRight } from 'lucide-react';
 
-const VideoSection: React.FC = () => {
+const NotFound: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayVideo = () => {
@@ -78,4 +78,4 @@ const VideoSection: React.FC = () => {
   );
 };
 
-export default VideoSection;
+export default NotFound;
