@@ -44,7 +44,7 @@ const TechStackSlider = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-background/0">
+    <section className="py-20 bg-background/0.5">
       <div className="container mx-auto px-6">
         <h2 className="flex text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-gold bg-clip-text text-transparent">
           Powered By CEO Yasir M.
@@ -62,7 +62,7 @@ const TechStackSlider = () => {
                 key={`${tech.name}-${index}`}
                 className="flex flex-col items-center justify-center min-w-[140px] group cursor-pointer"
               >
-                <div className="flex w-20 h-20 rounded-2xl bg-card/1.5 backdrop-blur-sm border border-border/10 flex items-center justify-center mb-4 p-4 group-hover:scale-110 group-hover:shadow-glow group-hover:border-primary/10 transition-all duration-220">
+                <div className="flex w-20 h-20 rounded-2xl bg-card/10 backdrop-blur-sm border border-border/10 flex items-center justify-center mb-4 p-4 group-hover:scale-110 group-hover:shadow-glow group-hover:border-primary/10 transition-all duration-240">
                   <img 
                     src={tech.logo} 
                     alt={tech.name}
