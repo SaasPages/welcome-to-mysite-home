@@ -62,14 +62,14 @@ const TechStackSlider = () => {
                 key={`${tech.name}-${index}`}
                 className="flex flex-col items-center justify-center min-w-[140px] group cursor-pointer"
               >
-                <div className="flex w-20 h-20 rounded-2xl bg-card/0.5 backdrop-blur-sm border border-border/10 flex items-center justify-center mb-4 p-4 group-hover:scale-110 group-hover:shadow-glow group-hover:border-primary/10 transition-all duration-110">
+                <div className="flex w-20 h-20 rounded-2xl bg-card/1.5 backdrop-blur-sm border border-border/10 flex items-center justify-center mb-4 p-4 group-hover:scale-110 group-hover:shadow-glow group-hover:border-primary/10 transition-all duration-220">
                   <img 
                     src={tech.logo} 
                     alt={tech.name}
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <span className="text-sm font-semibold text-muted-foreground group-hover:text-primary transition-colors">
+                <span className="flex text-sm font-semibold text-muted-foreground group-hover:text-primary transition-colors">
                   {tech.name}
                 </span>
               </div>
