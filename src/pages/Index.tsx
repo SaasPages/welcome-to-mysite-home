@@ -1,12 +1,12 @@
 import VideoBackground from "@/components/VideoBackground";
 import Navigation from "@/components/Navigation";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 import HeroSection from "@/components/HeroSection";
 import FeaturedProperties from "@/components/FeaturedProperties";
 import StatsSection from "@/components/StatsSection";
 import TechStackSlider from "@/components/TechStackSlider";
-import VideoSection from "@/components/VideoSection";
 import ComponentsSection from "@/components/ComponentsSection";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
+import VideoSection from "@/components/VideoSection";
 
 const Index = () => {
   return (
@@ -15,13 +15,13 @@ const Index = () => {
       <div className="relative" style={{ zIndex: 10 }}>
         <Navigation />
         <main>
+          <ThemeSwitcher />
           <HeroSection />
           <TechStackSlider />
           <StatsSection />
           <FeaturedProperties />
-          <VideoSection />
           <ComponentsSection />
-          <ThemeSwitcher />
+          <VideoSection />
         </main>
       </div>
     </div>
