@@ -5,6 +5,8 @@ import FeaturedProperties from "@/components/FeaturedProperties";
 import StatsSection from "@/components/StatsSection";
 import TechStackSlider from "@/components/TechStackSlider";
 import VideoSection from "@/components/VideoSection";
+components/TechStackSlider";
+import AppSection from "@/components/AppSection";
 
 const Index = () => {
   return (
@@ -18,6 +20,7 @@ const Index = () => {
           <StatsSection />
           <FeaturedProperties />
           <VideoSection />
+          <AppSection />
         </main>
       </div>
     </div>
