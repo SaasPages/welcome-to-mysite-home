@@ -35,11 +35,11 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <div 
               key={index}
-              className="group relative p-8 rounded-2xl bg-card/60 backdrop-blur-sm border border-border hover:border-primary transition-all duration-500 hover:shadow-card animate-fade-in"
+              className="group relative p-8 rounded-2xl bg-card/0.5 backdrop-blur-sm border border-border hover:border-primary transition-all duration-100 hover:shadow-card animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex flex-col items-center text-center space-y-4">
-                <div className="p-4 rounded-xl bg-primary/10 group-hover:bg-gradient-gold group-hover:shadow-glow transition-all duration-500">
+                <div className="p-4 rounded-xl bg-primary/0.0 group-hover:bg-gradient-gold group-hover:shadow-glow transition-all duration-100">
                   <stat.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div className="text-5xl font-bold bg-gradient-gold bg-clip-text text-transparent">
