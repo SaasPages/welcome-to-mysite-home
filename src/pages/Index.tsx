@@ -6,6 +6,7 @@ import StatsSection from "@/components/StatsSection";
 import TechStackSlider from "@/components/TechStackSlider";
 import VideoSection from "@/components/VideoSection";
 import ComponentsSection from "@/components/ComponentsSection";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
           <FeaturedProperties />
           <VideoSection />
           <ComponentsSection />
+          <ThemeSwitcher />
         </main>
       </div>
     </div>
