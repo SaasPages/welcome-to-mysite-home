@@ -14,7 +14,7 @@ const VideoSection: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Unlock powerful insights with the{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r">
               next-generation stethoscope
             </span>
           </h2>
@@ -38,7 +38,7 @@ const VideoSection: React.FC = () => {
                          bg-white/10 backdrop-blur-lg hover:bg-white/20 transition-all 
                          w-20 h-20 rounded-full flex items-center justify-center group"
               >
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r flex items-center justify-center">
                   <Play fill="white" size={24} className="ml-1" />
                 </div>
                 <div className="absolute w-20 h-20 rounded-full bg-purple-500/30 animate-ping"></div>
@@ -48,7 +48,7 @@ const VideoSection: React.FC = () => {
                 <p className="text-gray-300 mb-4">Learn how our technology provides clinical-grade insights for everyone</p>
                 <div className="flex items-center">
                   <div className="h-1 w-full bg-gray-700 rounded-full overflow-hidden">
-                    <div className="h-full w-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
+                    <div className="h-full w-0 bg-gradient-to-r rounded-full"></div>
                   </div>
                   <span className="ml-4 text-gray-400 whitespace-nowrap">0:00 / 5:23</span>
                 </div>
