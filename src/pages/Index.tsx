@@ -14,8 +14,8 @@ const Index = () => {
       <VideoBackground />
       <div className="relative" style={{ zIndex: 10 }}>
         <Navigation />
+        <ThemeSwitcher />
         <main>
-          <ThemeSwitcher />
           <HeroSection />
           <TechStackSlider />
           <StatsSection />
