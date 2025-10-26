@@ -39,14 +39,14 @@ const StatsSection = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex flex-col items-center text-center space-y-4">
-                <div className="p-4 rounded-xl bg-primary/0.0 group-hover:bg-gradient-gold group-hover:shadow-glow transition-all duration-100">
+                <div className="p-4 rounded-xl bg-primary/0.5 group-hover:bg-gradient-gold group-hover:shadow-glow transition-all duration-220">
                   <stat.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
-                <div className="text-5xl font-bold bg-gradient-gold bg-clip-text text-transparent">
+                <div className="flex text-5xl font-bold bg-gradient-gold bg-clip-text text-transparent">
                   {stat.value}
                 </div>
                 <div className="space-y-1">
-                  <div className="text-xl font-semibold text-foreground">
+                  <div className="flex text-xl font-semibold text-foreground">
                     {stat.label}
                   </div>
                   <div className="text-sm text-muted-foreground">
