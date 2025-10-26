@@ -1,60 +1,61 @@
 import React from "react";
 
-type AppCard = {
+type AppEvent = {
+  year: string;
   title: string;
   description: string;
-  platform?: string;
   href?: string;
 };
 
-const AppCard: React.FC<{ app: AppCard }> = ({ app }) => (
-  <article className="app-card" aria-labelledby={`app-${app.title}`}>
-    <h3 id={`app-${app.title}`} className="app-card__title">
-      {app.title} {app.platform ? <small className="platform">({app.platform})</small> : null}
-    </h3>
-    <p className="app-card__description">{app.description}</p>
-    {app.href ? (
-      <a className="app-card__cta" href={app.href}>
-        Learn more
-      </a>
-    ) : null}
-  </article>
-);
-
-const sampleApps: AppCard[] = [
+const sampleApps: AppEvent[] = [
   {
-    title: "Dashboard",
-    description: "A responsive admin dashboard with charts and realtime updates.",
-    platform: "Web",
+    year: "2020",
+    title: "Launch — Dashboard",
+    description: "Initial public release of the web dashboard with realtime charts and auth.",
     href: "#dashboard",
   },
   {
+    year: "2021",
     title: "Mobile Companion",
-    description: "Lightweight mobile app for on-the-go access to your data.",
-    platform: "iOS / Android",
+    description: "Added lightweight mobile app and offline support for critical metrics.",
     href: "#mobile",
   },
   {
-    title: "Embed Widgets",
-    description: "Drop-in widgets to display key metrics on any website.",
-    platform: "Web",
+    year: "2023",
+    title: "Widgets & Plugins",
+    description: "Drop-in widgets for embeddable charts and product snapshots.",
     href: "#widgets",
   },
 ];
 
-const AppSection: React.FC<{ id?: string; className?: string }> = ({ id = "apps", className = "" }) => {
+const AppSection: React.FC<{ id?: string; className?: string; apps?: AppEvent[] }> = ({
+  id = "apps",
+  className = "",
+  apps = sampleApps,
+}) => {
   return (
-    <section id={id} className={`app-section ${className}`} aria-labelledby={`${id}-title`}>
-      <header>
-        <h2 id={`${id}-title`}>Apps & Integrations</h2>
-        <p className="muted">Pre-built applications and integrations to get you started quickly.</p>
+    <section id={id} className={`history-section app-section ${className}`} aria-labelledby={`${id}-title`}>
+      <header className="history-header">
+        <h2 id={`${id}-title`}>Apps through time</h2>
+        <p className="muted">A timeline of our app releases and notable integrations.</p>
       </header>
 
-      <div className="app-grid" role="list">
-        {sampleApps.map((app) => (
-          <AppCard key={app.title} app={app} />
+      <ol className="timeline" role="list">
+        {apps.map((a) => (
+          <li key={`${a.year}-${a.title}`} className="timeline-item">
+            <div className="timeline-year" aria-hidden>
+              <span className="year-large">{a.year}</span>
+            </div>
+
+            <div className="timeline-content">
+              <h3 className="timeline-title">
+                {a.title} {a.href ? <a className="timeline-link" href={a.href}>→</a> : null}
+              </h3>
+              <p className="timeline-desc">{a.description}</p>
+            </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </section>
   );
 };
